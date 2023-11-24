@@ -2,6 +2,10 @@
 
 A new Flutter project.
 
+#Screen_Shot
+#cart_page
+![image](https://github.com/JanardhanGowda18/cart_page/assets/102749399/72722823-75b3-4fad-874b-8d5bdf37d707)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
