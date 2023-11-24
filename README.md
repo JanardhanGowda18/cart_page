@@ -3,8 +3,13 @@
 A new Flutter project.
 
 #Screen_Shot
-#cart_page
+
+#cart_page for cake shop
 ![image](https://github.com/JanardhanGowda18/cart_page/assets/102749399/72722823-75b3-4fad-874b-8d5bdf37d707)
+
+#cafe_shop 
+![image](https://github.com/JanardhanGowda18/cart_page/assets/102749399/c5fae145-534f-43d0-909c-5c6f135944b3)
+
 
 ## Getting Started
 
