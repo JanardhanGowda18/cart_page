@@ -60,7 +60,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Cupcake',
+                    'Cafe Shop',
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
@@ -91,7 +91,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Image.asset(
-                      'images/th.jpeg',
+                      'images/th1.jpeg',
                       height: 300,
                       width: double.infinity,
                       fit: BoxFit.cover,
