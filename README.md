@@ -2,6 +2,18 @@
 
 A new Flutter project.
 
+#Screen_Shot
+
+#cart_page for cake shop
+![image](https://github.com/JanardhanGowda18/cart_page/assets/102749399/72722823-75b3-4fad-874b-8d5bdf37d707)
+
+#cafe_shop 
+![image](https://github.com/JanardhanGowda18/cart_page/assets/102749399/c5fae145-534f-43d0-909c-5c6f135944b3)
+
+#indian_filter_coffee
+![image](https://github.com/JanardhanGowda18/cart_page/assets/102749399/59c4315f-be71-4e5e-ae47-32ba063ff1f7)
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
