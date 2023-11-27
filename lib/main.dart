@@ -6,15 +6,11 @@ void main() {
 
 class ProductDetails {
   final String name;
-  final String weight;
-  final String calories;
   final double price;
   final String description;
 
   ProductDetails({
     required this.name,
-    required this.weight,
-    required this.calories,
     required this.price,
     required this.description,
   });
@@ -39,12 +35,10 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
   int quantity = 1;
 
   final ProductDetails product = ProductDetails(
-    name: 'Fruity Summer',
-    weight: '300gr',
-    calories: '567cal',
+    name: 'Indian Filter Coffee',
     price: 7.50,
     description:
-    'Fluffy butter layers,  whole blueberries and cinnamon jamraspberries, Fruit the fleshy or dry ripened ovary of a flowering plant; fruits have been developed',
+    'One of the most common ways to drink coffee in India is as a Filter Kaapi. Filter Kaapi basically means filter coffee and is incredibly popular in southern India. With the migrations of Southern Indians worldwide, they brought their coffee culture along with them. ',
   );
 
   @override
@@ -55,7 +49,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 38),
+              padding: const EdgeInsets.only(top: 48, left: 15),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -64,69 +58,66 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
-                      color: Colors.red,
+                      color: Colors.brown,
                     ),
                   ),
                   IconButton(
-
-                    icon: Icon(Icons.shopping_cart, color: Colors.red),
+                    icon: Icon(Icons.shopping_cart, size: 35, color: Colors.brown),
                     onPressed: () {},
                   ),
                 ],
               ),
             ),
-            Text(
-              'Product Details',
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.red,
+            Padding(
+              padding: EdgeInsets.only(left: 15.0,bottom: 2.0),
+              child: Text(
+                'Product Details',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.brown,
+                ),
+                textAlign: TextAlign.end,
               ),
-              textAlign: TextAlign.end,
             ),
             Center(
               child: Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(14.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Image.asset(
-                      'images/th1.jpeg',
-                      height: 300,
-                      width: double.infinity,
-                      fit: BoxFit.cover,
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(15.0),
+                      child: Image.asset(
+                        'images/th1.jpg',
+                        height: 300,
+                        width: double.infinity,
+                        fit: BoxFit.cover,
+                      ),
                     ),
-                    SizedBox(height: 16),
+                    SizedBox(height: 26),
                     Row(
                       children: [
                         Text(
-                          'Fruity Summer ',
+                          'Indian Filter Coffee',
                           style: TextStyle(
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
-                            color: Colors.red,
+                            color: Colors.brown,
                           ),
                         ),
-                        SizedBox(width: 130),
+                        SizedBox(width: 100),
                         Text(
                           '\$${product.price.toStringAsFixed(2)}',
                           style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 22,
                             fontWeight: FontWeight.bold,
-                            color: Colors.red,
+                            color: Colors.brown,
                           ),
                         ),
                       ],
                     ),
-                    SizedBox(height: 6),
-                    Text(
-                      '${product.weight} ${product.calories}',
-                      style: TextStyle(
-                        fontSize: 16,
-                        color: Colors.red,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
+
                     SizedBox(height: 16),
                     Row(
                       children: [
@@ -135,7 +126,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                            color: Colors.red,
+                            color: Colors.brown,
                           ),
                           textAlign: TextAlign.start,
                         ),
@@ -143,12 +134,13 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                     ),
 
                     IngredientImages(
-                        imageUrls: [
-                          'https://vectorified.com/image/gluten-vector-2.jpg',
-                          'https://tse4.mm.bing.net/th?id=OIP.8H5m4mD82jec9FvouDwwRwAAAA&pid=Api&P=0&h=220',
-                          'https://cdn2.vectorstock.com/i/1000x1000/04/46/milk-flat-icon-with-long-shadow-vector-4920446.jpg',
-                          'https://tse1.mm.bing.net/th?id=OIP.n342pHKDT007BvmBknPftAAAAA&pid=Api&P=0&h=220'],
-                        labels: ['Gluten', 'Walnut','Milk','Eggs']
+                      imageUrls: [
+                        'https://cdn.wallpapersafari.com/22/8/eqPAEm.jpg',
+                        'https://tse3.mm.bing.net/th?id=OIP.DgJZEYAEaWhz_XKvshu-cgHaHa&pid=Api&P=0&h=220',
+                        'https://tse4.mm.bing.net/th?id=OIP.fatNujrwhVfusDITRSV9UAHaFn&pid=Api&P=0&h=220',
+                        'https://tse4.mm.bing.net/th?id=OIP.qphinZje4LtU_Qo_Ikok5gHaEo&pid=Api&P=0&h=220',
+                      ],
+                      labels: ['Water', 'Milk', 'Sugar', 'Coffee Beans'],
                     ),
 
                     SizedBox(height: 16),
@@ -157,7 +149,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
-                        color: Colors.red,
+                        color: Colors.brown,
                       ),
                       textAlign: TextAlign.start,
                     ),
@@ -171,7 +163,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                       ),
                       textAlign: TextAlign.center,
                     ),
-                    SizedBox(height: 80),
+                    SizedBox(height: 40),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
@@ -182,7 +174,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                             });
                           },
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.red,
+                            primary: Colors.brown,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5.0),
                             ),
@@ -195,7 +187,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
-                            color: Colors.black,
+                            color: Colors.brown,
                           ),
                         ),
                         SizedBox(width: 16),
@@ -206,7 +198,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                             });
                           },
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.red,
+                            primary: Colors.brown,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5.0),
                             ),
@@ -219,7 +211,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                             print('Added to Cart: $quantity ${product.name}(s)');
                           },
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.red,
+                            primary: Colors.brown,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5.0),
                             ),
